@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function sum(a,b){
+            document.write(a+b);
+        }
+
+        sum(20,33);
+     document.write("<br>");
+    sum(33,77);    
+
+
+// <br> don't work for console 
+  
+
+
+      document.write("<br>");
+
+
+
+       function greeting(fname='unfilled',lname='unfilled'){
+        console.log("hey from console to "+ fname +' '+ lname );
+        document.write("hey from the web to " + fname + " " +lname + '<br>');
+       } 
+
+       greeting('ayush','swami');
+       greeting('kry','kufar');
+       
+// 1 st way;
+
+
+
+       function percentage(eng,math,sci){
+        var z = ((eng+math+sci)/300)*100;
+
+        return z ;
+       }
+
+       var result = percentage(60,70,90);
+       document.write(result);
+//2nd way ;
+       document.write("<br><br>")
+      
+
+      
+      function per (es,we,er ){
+        var t = ((es+we+er)/300) * 100 ;
+        return t ;
+      }
+      var u = per(20,20,20);
+       document.write(u);
+       
+
+    </script>
+</body>
+</html>

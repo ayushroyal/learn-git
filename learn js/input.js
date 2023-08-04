@@ -7,3 +7,4 @@ var lname = prompt('enter your last name ');
 
 
 console.log('your full name is',fname,lname);
+
