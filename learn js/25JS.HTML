@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <SCRIPT>
+        function hlo(){
+            alert("don't open virus");
+            document.write("why you open this page when it says don't open ");
+        }
+
+        function yes(){
+            alert("you open the write button ");
+            document.write("now further processing ");
+        }
+        function no(){
+            alert("you may open the write button ");
+            document.write("now further processing ");
+        }
+      // ondblclick =<document class="write"></document>('hlo');
+         
+
+    
+      //  click(onclick) double click(ondblclick) ,right click(oncontextmenu), mouse hover(onmouseenter), mouse out(onmouseout) ,
+      //  mouse down(onmousedown) ,mouse up(onmouseup) ,key press(onkeypess) ,key up (onkeyup) ,load (onload),unload(onunload), resize(onresize) ,scroll(onscroll)
+    </SCRIPT> 
+
+<button onclick ="hlo()">don't click me</button>
+
+<button oncontextmenu="yes()">open me </button>
+<p onclick="no()">explaination</p>
+</body>
+</html>
