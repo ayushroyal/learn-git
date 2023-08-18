@@ -21,10 +21,10 @@
     document.write ("<br> <br>");
     
     
-    
+    const ages = { alice: 18, bob: 27 };
     //we can take  any type of value in array 
-    var all_arry_with_different_value = ['ayush',true,null,28.3,Boolean];
-    document.write("adding all array value:"+"<br>"+all_arry_with_different_value );
+    var all_arry_with_different_value = ['ayush',true,null,28.3,ages.alice];
+    document.write("adding all array value:"+"<br>"+ all_arry_with_different_value );
     document.write("<br>" );
     document.write("<br>" );
       
@@ -36,15 +36,15 @@
 
     document.write(g[1]+g[2]);
 
-    
+    var suma ='';
     var e = new Array(3);
     for (var h = 0;h <=4; h++){
         e[h] = prompt("enter value :")
         document.write('<li>' + e[h] + '</li>');
-        var suma = suma + e[h];
+        suma = suma + e[h];
     }
-    document.write('value added' + suma );
-    
+    document.write('value added - ' + (suma));
+
     </Script>
 </body>
 </html>

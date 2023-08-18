@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //multidimensional array 
+        // used to create array with realated data 
+        var a = [
+            ['harry', 18, 'male','bca'],
+            ['ayush', 48 , 'male', 'bca']
+
+        ];
+
+        document.write(a); 
+
+         for(var r = 0; r<3; r++){
+            document.write("<br>" +a[r]+ "<br>");
+         }
+        document.write("<br>");
+
+
+
+        var ary = [
+            ['harry', 18, 'male','bca'],
+            ['ayush', 48 , 'male', 'bca']
+
+        ];
+
+
+
+        //document.write("<table border = '1px' cellspacing='0'");
+         for(var  t= 0; t< 3; t++){
+            for(var j= 0; j<3;j++){
+                document.write(ary[t][j]);
+            }
+            document.write("<br>");
+         } 
+         //document.write("</table>");
+    </script>
+</body>
+</html>

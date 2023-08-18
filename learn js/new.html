@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //modifying array elements
+        //delete and changing 
+         var a = ['ayush',18,'male','bca'];
+         document.write(a + "<br>");
+            a[1]= 19;
+            document.write(a + "<br>");
+            delete a[0];
+            document.write(a + '<br>');
+        // sort and reverse
+        var d = ['duck','pig','dog','cat'];
+        document.write(d + '<br>');
+        d.sort();
+        document.write(d +"<br>");
+        d.reverse();
+        document.write(d + "<br>");
+        // pop and push in array 
+
+        d.pop();
+        document.write(d + "<br>");
+        d.push("karan");
+        d.push("hey");
+        document.write(d + "<br>");
+    // shift and unshift in array
+       d.shift();
+       document.write(d + "<br>");
+       d.unshift('name');
+       document.write(d + "<br>");
+       // adding to var array into one 
+       var g = d.concat("bird", "fly high .");
+       document.write(g + "<br>");
+       
+       var h = d.concat(a);
+       document.write(h + "<br>");
+       
+       var q = d.concat(a,g);
+       document.write(q + "<br>"); 
+       
+       // join in array it make all array into one value as a string.
+
+       
+       var q = d.join("_");
+       document.write(q + "<br>"); 
+       var q = d.join("<br>");
+       document.write(q + "<br>");
+       
+       
+       
+       // slice function remove the value of selected index 
+       
+       var r = ['ayush',18,'male','bca'];
+       var g = r.slice(1,3);
+       document.write(g + "<br>");
+       
+       var g = r.slice(2);
+       document.write(g + "<br>");
+       var g = r.slice(-3);
+       document.write(g + "<br>");
+       
+       
+       //array splice(index , howmuch , 'new value') 
+       //                     delete          its used to insert value in between 
+       var i =  ['ayush',18,'male','bca'];
+       document.write(i + "<br>");
+       
+       i.splice(2,0,"student", "live in haryana")
+       document.write(i + "<br>");
+       // in this splice 2 in the middle erase two value ;student and live in haryana
+       i.splice(2,2,"student", "live in haryana")
+       document.write(i + "<br>");   
+
+       i.splice(-2,0,"student", "live in haryana")
+       document.write(i + "<br>");
+
+       //also be used in deleting value ;
+
+       i.splice(2,2)
+       document.write(i + "<br>");
+       
+       //is array function for checking array ; 
+       var h =  ['ayush',18,'male','bca'];
+       document.write(h + "<br>");
+       var t = Array.isArray(h); 
+       document.write(t + "<br>");
+       var z = 100000000; 
+       document.write(z + "<br>");
+       var t = Array.isArray(z); 
+       document.write(t + "<br>");
+       
+       // loop with it 
+       
+       
+       if(Array.isArray(z)){
+           
+           document.write("this is a array value ");
+        }else{
+           document.write("this is not an array value");
+
+
+       }
+       
+
+
+
+       if(Array.isArray(h)){
+           
+           document.write("<br> this is a array value");
+        }else{
+           document.write("<br> this is not an array value ");
+           
+
+       
+        }    
+
+    </script>
+</body>
+</html>
