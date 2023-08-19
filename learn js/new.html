@@ -102,24 +102,115 @@
            
            document.write("this is a array value ");
         }else{
-           document.write("this is not an array value");
-
-
-       }
-       
-
-
-
-       if(Array.isArray(h)){
-           
-           document.write("<br> this is a array value");
+            document.write("this is not an array value");
+            
+            
+        }
+        
+        
+        
+        
+        if(Array.isArray(h)){
+            
+            document.write("<br> this is a array value");
         }else{
            document.write("<br> this is not an array value ");
            
 
-       
+           
         }    
+        document.write("<br>");
+        // continue 
+        // search any element  of array ; use indexOf, .lastindexOf
+        // if value not founded input will be -1
 
-    </script>
+        var  b = ["sanhil","ram","potter","rahul","potter"];
+        document.write(b + "<br>");
+        
+        var  e = b.indexOf("potter",3); 
+        document.write(e + "<br>");
+        // check the value state if its true 
+        // its case sensitive 
+        var  b = ["sanhil","ram","potter","rahul","potter"];
+        document.write(b + "<br>");
+        
+        var  e = b.includes("potter"); 
+        document.write(e + "<br>");
+        
+        document.write("<br> <br>");
+        //some() function used to check if any element of an array pass a test  
+        //only used for functions
+        
+        var  ages  = [38,18,3,23,16];
+        document.write(ages + "<br>");
+        
+        var p = ages.some(checkagesabove); 
+        document.write(p + "<br>");
+        
+        function checkagesabove(age){
+            return age >= 18 ;
+        }
+        
+        
+        
+        document.write("<br> <br>");
+        // to check every function of the element of array and if all value is true than only print true 
+        
+        
+        
+        var  ages  = [38,18,3,23,16];
+        document.write(ages + "<br>");
+        
+        var p = ages.every(checkagesabove); 
+        document.write(p + "<br>");
+        
+        
+        
+        document.write("<br> <br>");
+        //find() function is used to check if first value of the array element pass the test ; and return the true and false value
+        var  ages  = [38,18,3,23,16];
+        document.write(ages + "<br>");
+        var adultages = ages.find(checkadult);
+        document.write(adultages + "<br>");
+        function checkadult(age){
+            return age =>18;
+        }
+
+
+        document.write("<br> <br>");
+        //findindex(function name ) function is used to check if first value of the array element pass the test ; and return the index of the element 
+        var  ages  = [38,18,3,23,16];
+        document.write(ages + "<br>");
+        var adultages = ages.findIndex(checkadult);
+        document.write(adultages + "<br>");
+        function checkadult(age){
+            return age =>18;
+        }
+        
+        document.write("<br> <br>");
+        // filter() method creates an array filled all array elements that pass a test; 
+        //it create different array by checking element of an array that pass the test;
+        // and make different array according to its condition ;
+        var  hi  = [8,18,3,23,];
+        document.write(hi + "<br>");
+        
+        var b  = hi.filter(weak);
+        document.write(b);
+
+        function weak(g){
+            return g >= 18;
+        }
+
+    
+
+
+        
+
+        
+        
+
+
+ 
+        </script>
 </body>
 </html>
