@@ -95,6 +95,7 @@
        var t = Array.isArray(z); 
        document.write(t + "<br>");
        
+       
        // loop with it 
        
        
@@ -196,12 +197,145 @@
         
         var b  = hi.filter(weak);
         document.write(b);
-
+        
         function weak(g){
             return g >= 18;
         }
+        
+        // tostring() to convert into string ;        
+        var a = ['ayush','swami'];
+        document.write('<br>' + a);
+        
+        a.toString();
+        document.write('<br>' + a);
+        
+        
+        //valueof() method return the array     similar to document.write .
+        
+        var a = ['ayush','swami'];
+        document.write('<br>' + a);
+        
+        
+        document.write('<br>' + a.valueof);
+        
+        //file() same value in all value of array;
+        a.fill('hey'); 
+        document.write('<br>' + a);
+        
+        
+        
+        
+        document.write('<br>' );
+        
+        
+        
+      //forEach loop  name of other loops are with this (while_do/while_for_for/in loop);
+      // a.forEach (function(){__________statement_________});
+        
+        var a = ['duck','pigon','crow','super'];
+        
+     a.forEach(function(value, index){
+            
+        document.write(index + ':' + value + '<br>' + '<br>');
 
+     })
+
+     //otherway for same 
+     var a = ['duck','pigon','crow','super'];
+        
+    a.forEach(hey)
+
+
+     function hey (value,index){
+            
+    document.write(index + ':' + value + '<br>' + '<br>');
+
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//array work on number preset for each value 
+    //////OBJECT   they have property like firstname and can also store array and multifunction can be perform easily
+// in function use ()
+//read function with (this) used for object to find its property when function in same object
+
+
+// function made inside the object is called method 
+// object cannot be called directly use dot . 
+// we can also create a object inside an object .
+
+
+
+    var a = {
+        firstname : 'ayush',
+        lastname  : 'swami',
+        ages      : '18',
+        country   : 'India',
+        a         : ['duck','pigon','crow','super'],
+        salary    : function(){return 3777;},
+        fullname  : function(){return this.firstname + this.lastname ;},
+        m     : { name        : a,
+                      class   : b ,
+                      country :i }
+    };  
     
+    document.write(a.lastname);
+    document.write(a.a);
+
+    document.write('<br>');
+
+    document.write(a.a[3]);
+    document.write('<br>');
+
+    document.write(a.salary());
+
+    document.write('<br>');
+    
+    document.write(a.fullname());
+    
+    document.write('<br>');
+
+    document.write(a.m.class);
+
+
+    console.log(a);
+    console.log(a.firstname);
+    console.log(a.a);
+    console.log(a.a[3]);
+    console.log(a.salary());
+
+
+
+    console.log(a.m.country);
+     
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
         
@@ -213,4 +347,5 @@
  
         </script>
 </body>
-</html>
+</ht
+ml>
