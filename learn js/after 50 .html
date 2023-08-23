@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+//object creating 2 method
+
+var person = new Object();
+
+person.fname ='ram';
+person.lname ='kumar';
+person.age   = 25;
+
+document.write(person.fname);
+document.write(person['fname']);
+console.log(person);
+
+// ARRAY OF OBJECTS  
+
+var student = [{name:'ram',age : 24},
+{name : 'karan' , age : 28},
+{name : 'rahul', age  : 34}
+]
+
+
+
+//loop WITH ARRAY OF OBJECTS 
+
+
+
+console.log(student);
+for (var a = 0; a < student.length ; a++){
+    document.write(student[a].name + student[a].age + '<br>');
+}
+
+//change constant value by making changes in array 
+const b = [10, 43 ,45];
+b[1] = 34;
+b[2] = 58;
+
+console.log(b);
+
+const q = {name:'ram',age : 24,
+name : 'karan' ,age : 28,
+name : 'rahul',age  : 34}
+
+q.name ="i don't know" 
+console.log(q.age);
+
+//loop to print every value of object with out writing each line again and again .
+// var taken for the loop can also print the property of object 
+var om = {
+    firstname : 'ayush',
+    lastname  : 'swami',
+    email     : 'hlo'
+}
+for (var jey in om ){
+    document.write(jey + ":" + om [jey] + "<br>");
+}
+
+
+// array Map() function ; change the array by forming an another array with some arthmetic operation 
+
+var maping = [44,54 ,63 ,36];
+
+var e = maping.map(test);
+
+document.write(e);
+
+function test (g){
+    return g*2 ;
+}
+// be careful about brackets 
+var hey = [
+{name:'ram',age : 24},
+{name : 'karan' ,age : 28},
+{name : 'rahul',age  : 34}];
+
+var t = hey.map(u);
+
+document.write(t);
+
+function u (x){
+    return '<br>' +x.name + "  " + x.age
+}
+
+
+    </script>
+</body>
+</html> 
