@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //  lenght    show how many caracteristic we have in a string 
+
+var str = "Javasript is a great language";
+
+var a = str.length ; 
+
+document.write (a);
+
+//to lowercase and uppercase method
+
+var a = str.toLocaleLowerCase() ; 
+document.write (a);
+var a = str.toLowerCase() ; 
+document.write (a);
+var a = str.toUpperCase() ; 
+document.write (a);
+
+
+
+
+document.write ('<br>');
+// include function to find something in string and if founded stay true or false 
+// case sensetive and uppercase dont work .
+var a = str.includes('great') ; 
+document.write (a);
+
+
+//startsWith()count from the start for match and endsWith() count from the end for match 
+
+var a = str.startsWith('Java') ; 
+document.write (a);
+var a = str.endsWith('language') ; 
+document.write (a);
+
+// search() show the position one value before if the string value if founded 
+var a = str.search('a') ; 
+document.write (a);
+
+
+// match() it make array of all the matched search and we use / in this  and g mean global
+
+var a = str.match(/a/g) ; 
+document.write (a);
+
+document.write ("<br>");
+//indexof and lastindex of return index of the value we search from start and ending and give their index value . 
+var a = str.indexOf('is') ; 
+document.write(a);
+
+
+//search from back but give the value of index from the start 
+var a = str.lastIndexOf('is') ; 
+document.write(a);
+//replace fuction only  replays in one place but by using (/is/g) it become global 
+
+var a = str.replace('is','was') ; 
+document.write(a);
+//global
+var a = str.replace(/is/g,'was');
+
+document.write(a);
+
+//trim function 
+
+var e = "                   jerry        ";
+var q = e.trim();
+//alert(q);
+
+document.write ("<br>");
+// charAt function 
+you = ("ayush");
+var f = you.charAt(3);
+document.write(f);
+
+// charcodeat () and fromcharcode()
+//we have unique table for this function called sky code for this function each value their unique sky code 
+// this tell the sky code that string whose index is return 
+var f = you.charCodeAt(1); 
+document.write(f);
+
+//not require any varable and show the value of the code return 
+var f = String.fromCharCode(65);
+document.write(f); 
+
+document.write('<br>'); 
+// concate function it is used to merge two or more string 
+
+var str = (str);
+var str_2 = 'ayush';
+
+var added_varable = str.concat(str_2);
+
+
+//split funcion it split all the value of string and make it a new string 
+
+var au = 'hey everyone how are you';
+
+var u = au.split('e');
+
+
+document.write(u); 
+
+
+document.write('<br>'); 
+//repeat is function that repeat the string how many time it is writen 
+
+
+var k= 'hey everyone how are you';
+
+var c = k.repeat(3);
+
+document.write(c); 
+
+
+
+document.write('<br>'); 
+//Slice is a function that cut part of a array 
+
+var r= 'hey everyone how are you';
+
+var a = r.slice(7);
+
+
+document.write(a); 
+var a = r.slice(-2);
+document.write(a); 
+
+
+
+document.write('<br>'); 
+//sub string and substr; 
+var r= 'hey everyone how are you';
+
+
+//in this it count from 7 to 9th value and it does't count the 9th value  
+var a = r.substring(7,9);//(8,1);
+document.write(a); 
+
+document.write('<br>');
+// in this it count from the 7th value till the 7+3= 10th value 
+var a = r.substr(7,3);
+document.write(a); 
+
+//to string() it change the value of the varaible into string 
+document.write('<br>');
+
+var str = 34; 
+var a = str.toString();
+
+
+document.write(a+21);
+
+//value of () print the value of the varaible 
+//not so useful 
+var r= 'hey everyone how are you';
+var a = r.valueOf();
+document.write(a); 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>
