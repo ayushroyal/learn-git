@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //NUMBER METHODS ; 
+    
+    //number() it create any string into numbers 
+//if use any character it show NaN ;
+//if use booleen true = 1 and false =0; 
+
+    var a = '33';
+    
+    var num = Number(a);
+    
+    
+    document.write(num+13);
+    
+    document.write('<br>');
+    //parseInt() show the first int value possible of the varable ;
+    var a = '32.03 years  34 23';
+    var num = parseInt(a);
+    
+    document.write(num+13);
+    
+    document.write('<br>');
+    //parseFloat() show the first int value possible of the varable and also return decimal value ;
+    var a = '32.03 years  34 23';
+    var num = parseFloat(a);
+    
+    document.write(num+13);
+    
+    //is function show true or false only ;
+    
+    document.write('<br>');
+    // isFinite() show the var is countable or not 
+    //var the = 'hey';
+    //var the = infinity ;
+    var the = 344;
+    var ji = Number.isFinite(the);
+    document.write(ji);
+    
+    // isInteger() show the var is a integer or not if yes return true 
+    document.write('<br>');
+    //the = Infinity;
+    the = 45.23;// false 
+    var ji = Number.isInteger(the);
+    document.write(ji);
+    
+    document.write('<br>');
+    // toFixed() it fix the count of the value after decimal point to the given digit
+    
+    var a = 545.3445345335;
+    
+    var f  = a.toFixed(3);
+    
+    document.write(f);
+    
+    document.write('<br>');
+    // toPrecision()
+    var a = 3.37534;
+    //var f  = a.toPrecision(2);
+    var f  = a.toPrecision(10);
+    document.write(f);
+
+
+    
+
+
+
+
+    </script>
+</body>
+</html>
